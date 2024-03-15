@@ -44,14 +44,12 @@ async function checkWeather(cityName){
 }
 async function getTime(longitude,latitude){
     try {
-        
         const Key = "LB3DPT7AFIP7"
         const response = await fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=${Key}&format=json&by=position&lat=${latitude}&lng=${longitude}`);
         const package = await response.json();
         if(package.status = "OK"){
             const time = document.querySelector(".selected-country-time");
             time.textContent ="Local time: " + package.formatted
-            console.log(package)
         }
        
 
