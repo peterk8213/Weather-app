@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #605d5d;;
+}
+.card{
+    max-width: 90%;
+    max-width: 470px;
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#cityName{
+    border: 2px solid transparent;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: border-color 0.5s ease;
+}
+#cityName:focus{
+    border-color: rgba(177, 218, 29, 0.687);
+    outline : none;
+}
+#cityName:hover {
+    border-color: rgba(195, 0, 255, 0.575);
+}
+#search-button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    
+}
+#search-button:hover{
+    background-color: rgba(255, 255, 0, 0.518);
+}
+#search-image{
+    padding:4px;
+    position:cover;
+    background-size:cover ;
+    width: 60%;
+}
+#search-image:hover{
+    animation: bounce 0.8s infinite alternate;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: inline-block
+}
+.weather-icon:hover{
+    animation: bounce 0.5s infinite alternate;/* Apply bounce animation when hovered */
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Start position of the image */
+    }
+    100% {
+        transform: translateY(-10px); /* End position of the image */
+    }
+}
+.temp{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+
+}
+.wind,.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+   
+
+}
+.city{
+    margin-bottom: 50px;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
+.selected-country-time{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: -30px;
+    
+}
